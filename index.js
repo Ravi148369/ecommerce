@@ -313,6 +313,7 @@
                 viewed.textContent = `${item.viewed} viewed`
                 prize.textContent = `$${item.prize}`
                 itemDiv.addEventListener('click', () => {
+                    window.scrollTo({top: 0, behavior: 'smooth'});
                     this.render(index)
                 })
                 imageDiv.append(image)
@@ -366,6 +367,7 @@
                 main.append(shoppinigTitle)
                 for (let i = 1; i < arguments.length; i++) {
                     const [link] = this.getElement('a')
+                    link.classList.add('animation')
                     link.textContent = arguments[i]
                     main.append(link)
                 }
