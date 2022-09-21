@@ -43,8 +43,8 @@
             "name": "Red",
             "value": "red"
         }, {
-            "name": "Black",
-            "value": "black"
+            "name": "Rose Gold",
+            "value": "yellow"
         }
     ],
     "Bought": false,
@@ -91,14 +91,14 @@
         "prize": 966,
         "color": [
             {
-                "name": "Grey",
+                "name": "Space Grey",
                 "value": "grey"
             }, {
                 "name": "Red",
                 "value": "red"
             }, {
-                "name": "Black",
-                "value": "black"
+                "name": "Green",
+                "value": "green"
             }
         ],
         "Bought": false,
@@ -121,7 +121,7 @@
                 "name": "Grey",
                 "value": "grey"
             }, {
-                "name": "Red",
+                "name": "Cherry Red",
                 "value": "red"
             }, {
                 "name": "Black",
@@ -192,7 +192,7 @@
         "quantity": 0,
         "deliveryCharges": 36
     },{
-        "title": "Apple Iphone 11 Pro Max",
+        "title": "Apple Iphone 14 Pro Max",
         "location": "Orlando , Florida",
         "viewed": 1142,
         "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
