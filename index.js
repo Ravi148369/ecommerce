@@ -13,10 +13,10 @@
                 return elements
             },
             render: function (index = 0) {
-                if(this.body){
+                if (this.body) {
                     this.body.innerHTML = ''
                     this.header()
-                    this.productSection(product.product[index],index)
+                    this.productSection(product.product[index], index)
                     this.profile()
                     this.similarItemSection(product.product)
                     this.footer()
@@ -27,7 +27,7 @@
                 const [header] = this.getElement('header')
                 const [select] = this.getElement('select')
                 const [option] = this.getElement('option')
-                const [input] = this.getElement('input', 1)
+                const [input] = this.getElement('input')
                 const [productList, inputDiv, sellingDiv, alignDiv, searchDropDown] = this.getElement('div', 5)
 
                 searchDropDown.classList.add('dropdown')
@@ -52,7 +52,7 @@
                                 const [item] = this.getElement('div')
                                 const [title] = this.getElement('p')
                                 const [img] = this.getElement('img')
-                                
+
                                 item.classList.add('dropdown-item')
                                 img.src = `./images/${value.imageSrc.image1}`
                                 title.textContent = value.title
@@ -72,12 +72,12 @@
                 header.append(alignDiv)
                 this.body.append(header)
             },
-            productSection: function (product,index) {
+            productSection: function (product, index) {
                 const [main, section] = this.getElement('section', 2)
-                main.classList.add('align','margintop')
+                main.classList.add('align', 'margintop')
                 section.classList.add('product-section')
                 const imageSection = this.productImageSection(product)
-                const productDetailSection = this.productDetailSection(product,index)
+                const productDetailSection = this.productDetailSection(product, index)
                 section.append(imageSection, productDetailSection)
                 main.append(section)
                 this.body.append(main)
@@ -98,13 +98,13 @@
                 img2.alt = 'not found'
                 img3.alt = 'not found'
 
-                const getModel=(e)=>{
+                const getModel = (e) => {
                     this.openModel(e.target.src)
                 }
-                img1.addEventListener('click',getModel)
-                img2.addEventListener('click',getModel)
-                img3.addEventListener('click',getModel)
-                mainImg.addEventListener('click',getModel)
+                img1.addEventListener('click', getModel)
+                img2.addEventListener('click', getModel)
+                img3.addEventListener('click', getModel)
+                mainImg.addEventListener('click', getModel)
                 mainImageDiv.append(mainImg)
                 sideImageDiv1.append(img1)
                 sideImageDiv2.append(img2)
@@ -124,20 +124,20 @@
                 const [storePickupRadioButton, deliveryRadioButton] = this.getElement('input', 2)
                 const FormDiv = this.makeOfferForm(product, index)
                 radioButtonDiv.classList.add('color-radioButton')
-                product.color.map((value,index)=>{
+                product.color.map((value, index) => {
                     const [radioInput] = this.getElement('input')
-                    const [label]=this.getElement('label')
-                    label.setAttribute('for',`color${index}`)
-                    label.style.backgroundColor=value.value
+                    const [label] = this.getElement('label')
+                    label.setAttribute('for', `color${index}`)
+                    label.style.backgroundColor = value.value
                     radioInput.setAttribute('type', 'radio');
                     radioInput.setAttribute('name', 'color');
                     radioInput.setAttribute('value', value.name);
-                    radioInput.id=`color${index}`
+                    radioInput.id = `color${index}`
                     radioInput.addEventListener('click', function () {
                         radioInput.style.accentColor = value.value
                         color.textContent = `Color : ${radioInput.value}`
                     })
-                    radioButtonDiv.append(radioInput,label)
+                    radioButtonDiv.append(radioInput, label)
                 })
                 quantityDiv.classList.add('quantity-icons')
                 alignDiv.classList.add('space-between')
@@ -201,7 +201,7 @@
                 infoDiv.append(title, alignDiv, productInfo, prize, color, radioButtonDiv, deliveryText, deliveryDiv, quantityText, quantityDiv, deliveryDays, FormDiv)
                 return infoDiv
             },
-            makeOfferForm: function (product,index) {
+            makeOfferForm: function (product, index) {
                 const [offerFormDiv, FormDiv, buttonDiv, closeDiv, deliveryDiv, paymentDiv] = this.getElement('div', 7)
                 const [buyNowButton, makeOfferButton, submitButton] = this.getElement('button', 3)
                 const [offerInput, locationInput, radioPickupButton, radioDeliveryButton, radioOnlineButton, radioOfflineButton] = this.getElement('input', 6)
@@ -277,6 +277,9 @@
                     if (offerInput.value.trim() !== '' && locationInput.value.trim() !== '') {
                         alert('offer submitted')
                     }
+                    else{
+                        alert('please enter data')
+                    }
                 })
                 paymentDiv.append(radioOnlineButton, onlineLabel, radioOfflineButton, offlineLabel)
                 deliveryDiv.append(radioPickupButton, pickupButton, radioDeliveryButton, deliveryButton)
@@ -313,7 +316,7 @@
                 viewed.textContent = `${item.viewed} viewed`
                 prize.textContent = `$${item.prize}`
                 itemDiv.addEventListener('click', () => {
-                    window.scrollTo({top: 0, behavior: 'smooth'});
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     this.render(index)
                 })
                 imageDiv.append(image)
@@ -409,15 +412,15 @@
                 main.append(align)
                 this.body.append(main)
             },
-            openModel:function (targetImageSrc) {
-                const [outerModel]=this.getElement('section')
-                const [innerImage]=this.getElement('img')
-                const [imageDiv]=this.getElement('div')
+            openModel: function (targetImageSrc) {
+                const [outerModel] = this.getElement('section')
+                const [innerImage] = this.getElement('img')
+                const [imageDiv] = this.getElement('div')
 
                 outerModel.classList.add("outer-model")
-                innerImage.src=targetImageSrc
-                
-                function animation (zoom, x = 0) {
+                innerImage.src = targetImageSrc
+
+                function animation(zoom, x = 0) {
                     if (x < zoom) {
                         x += 0.10
                         imageDiv.style.transform = `scale(${x})`
@@ -426,12 +429,11 @@
                         }, 5);
                     }
                 }
-                outerModel.addEventListener('click',(e)=>{
-                    if(e.target==outerModel){
-                        outerModel.style.display='none'
+                outerModel.addEventListener('click', (e) => {
+                    if (e.target == outerModel) {
+                        outerModel.style.display = 'none'
                     }
                 })
-                
                 animation(1.1)
                 imageDiv.append(innerImage)
                 outerModel.append(imageDiv)
