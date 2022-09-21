@@ -1,0 +1,333 @@
+{
+    "product":[{
+    "title": "Apple Iphone 11 Pro Max",
+    "location": "San Jose, CA",
+    "viewed": 1152,
+    "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+    "prize": 1999.99,
+    "color": [
+        {
+            "name": "Grey",
+            "value": "grey"
+        }, {
+            "name": "Red",
+            "value": "red"
+        }, {
+            "name": "Black",
+            "value": "black"
+        }, {
+            "name": "White",
+            "value": "rgb(237, 237, 237)"
+        }
+    ],
+    "Bought": false,
+    "imageSrc": {
+        "main": "iphone.jpg",
+        "image1": "Rectangle-2.jpg",
+        "image2": "Rectangle-1.jpg",
+        "image3": "Rectangle.jpg"
+    },
+    "quantity": 0,
+    "deliveryCharges": 40
+    },{
+    "title": "Apple Iphone 13 Pro Max",
+    "location": "Orlando , Florida",
+    "viewed": 1142,
+    "information": "The Apple iPhone 13 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+    "prize": 920,
+    "color": [
+        {
+            "name": "Grey",
+            "value": "grey"
+        }, {
+            "name": "Red",
+            "value": "red"
+        }, {
+            "name": "Black",
+            "value": "black"
+        }
+    ],
+    "Bought": false,
+    "imageSrc": {
+        "main": "iphone14.jpg",
+        "image1": "Rectangle-1.jpg",
+        "image2": "Rectangle-2.jpg",
+        "image3": "Rectangle.jpg"
+    },
+    "quantity": 0,
+    "deliveryCharges": 41
+    },{
+        "title": "Apple Iphone 12 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1122,
+        "information": "The Apple iPhone 12 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 949,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle.jpg",
+            "image2": "Rectangle-2.jpg",
+            "image3": "Rectangle-1.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 42
+    },{
+        "title": "Apple Iphone X Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1162,
+        "information": "The Apple iPhone X Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 966,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle-2.jpg",
+            "image2": "Rectangle-1.jpg",
+            "image3": "Rectangle.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 44
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1142,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 950,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle.jpg",
+            "image2": "Rectangle-2.jpg",
+            "image3": "Rectangle-1.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 39
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1142,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 950,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle-2.jpg",
+            "image2": "Rectangle.jpg",
+            "image3": "Rectangle-1.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 35
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1142,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 950,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle.jpg",
+            "image2": "Rectangle-2.jpg",
+            "image3": "Rectangle-1.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 36
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1142,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 950,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle-2.jpg",
+            "image2": "Rectangle.jpg",
+            "image3": "Rectangle-1.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 47
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 1142,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 950,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle.jpg",
+            "image2": "Rectangle-1.jpg",
+            "image3": "Rectangle-2.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 48
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 14623,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 2999.99,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle-1.jpg",
+            "image2": "Rectangle-2.jpg",
+            "image3": "Rectangle.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 40
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "Orlando , Florida",
+        "viewed": 14623,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 2999.99,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle-1.jpg",
+            "image2": "Rectangle-2.jpg",
+            "image3": "Rectangle.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 40
+    },{
+        "title": "Apple Iphone 11 Pro Max",
+        "location": "San Jose, CA",
+        "viewed": 1152,
+        "information": "The Apple iPhone 11 Pro Max 5G comes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode that provides smoother looking videos with better image stabilization.This is all powered by the Apple A16 Bionic chipset and 6GB of RAM.",
+        "prize": 1999.99,
+        "color": [
+            {
+                "name": "Grey",
+                "value": "grey"
+            }, {
+                "name": "Red",
+                "value": "red"
+            }, {
+                "name": "Black",
+                "value": "black"
+            }, {
+                "name": "White",
+                "value": "grey"
+            }
+        ],
+        "Bought": false,
+        "imageSrc": {
+            "main": "iphone.jpg",
+            "image1": "Rectangle-2.jpg",
+            "image2": "Rectangle-1.jpg",
+            "image3": "Rectangle.jpg"
+        },
+        "quantity": 0,
+        "deliveryCharges": 40
+    }]
+}
