@@ -2,7 +2,10 @@
     "use strict"
     let product = ''
     async function getProducts() {
-        product = await fetch('./Products.json').then(value => value.json())
+        try{
+            product = await fetch('./Products.json').then(value => value.json())
+        }catch(error){
+        }
         const products = {
             body: document.querySelector('#main'),
             getElement: function (element, count = 1) {
@@ -16,9 +19,10 @@
                 if (this.body) {
                     this.body.innerHTML = ''
                     this.header()
-                    this.productSection(product.product[index], index)
-                    this.profile()
-                    this.similarItemSection(product.product)
+                    if(product){
+                        this.productSection(product.product[index], index)
+                        this.similarItemSection(product.product)
+                    }
                     this.footer()
                     this.baseFooter()
                 }
@@ -54,7 +58,9 @@
                                 const [img] = this.getElement('img')
 
                                 item.classList.add('dropdown-item')
-                                img.src = `./images/${value.imageSrc.image1}`
+                                if(value.imageSrc){
+                                    img.src = `./images/${value.imageSrc.image1}`
+                                }
                                 title.textContent = value.title
                                 item.append(img, title)
                                 item.addEventListener('click', () => {
@@ -89,10 +95,12 @@
                 const [img1, img2, img3, mainImg] = this.getElement('img', 4)
 
                 imgDiv.classList.add('image-div')
-                mainImg.src = `./images/${product.imageSrc.main}`
-                img1.src = `./images/${product.imageSrc.image1}`
-                img2.src = `./images/${product.imageSrc.image2}`
-                img3.src = `./images/${product.imageSrc.image3}`
+                if(product.imageSrc){
+                    mainImg.src = `./images/${product.imageSrc.main}`
+                    img1.src = `./images/${product.imageSrc.image1}`
+                    img2.src = `./images/${product.imageSrc.image2}`
+                    img3.src = `./images/${product.imageSrc.image3}`
+                }
                 mainImg.alt = 'not found'
                 img1.alt = "not found"
                 img2.alt = 'not found'
@@ -124,21 +132,23 @@
                 const [storePickupRadioButton, deliveryRadioButton] = this.getElement('input', 2)
                 const FormDiv = this.makeOfferForm(product, index)
                 radioButtonDiv.classList.add('color-radioButton')
-                product.color.map((value, index) => {
-                    const [radioInput] = this.getElement('input')
-                    const [label] = this.getElement('label')
-                    label.setAttribute('for', `color${index}`)
-                    label.style.backgroundColor = value.value
-                    radioInput.setAttribute('type', 'radio');
-                    radioInput.setAttribute('name', 'color');
-                    radioInput.setAttribute('value', value.name);
-                    radioInput.id = `color${index}`
-                    radioInput.addEventListener('click', function () {
-                        radioInput.style.accentColor = value.value
-                        color.textContent = `Color : ${radioInput.value}`
+                if(product.color){
+                    product.color.map((value, index) => {
+                        const [radioInput] = this.getElement('input')
+                        const [label] = this.getElement('label')
+                        label.setAttribute('for', `color${index}`)
+                        label.style.backgroundColor = value.value
+                        radioInput.setAttribute('type', 'radio');
+                        radioInput.setAttribute('name', 'color');
+                        radioInput.setAttribute('value', value.name??"default");
+                        radioInput.id = `color${index}`
+                        radioInput.addEventListener('click', function () {
+                            radioInput.style.accentColor = value.value
+                            color.textContent = `Color : ${radioInput.value}`
+                        })
+                        radioButtonDiv.append(radioInput, label)
                     })
-                    radioButtonDiv.append(radioInput, label)
-                })
+                }
                 quantityDiv.classList.add('quantity-icons')
                 alignDiv.classList.add('space-between')
                 infoDiv.classList.add('product-div')
@@ -150,11 +160,13 @@
                 quantityText.textContent = 'Quantity'
                 deliveryText.textContent = 'Delivery'
                 title.textContent = product.title
-                location.textContent = product.location
-                productInfo.textContent = product.information
-                prize.textContent = `$${product.prize}`
-                views.textContent = `${product.viewed} Viewed`
-                color.textContent = `Color : ${product.color[0].name}`
+                location.textContent = product.location??'no location found'
+                productInfo.textContent = product.information??'no information found'
+                prize.textContent = `$${product.prize??0}`
+                views.textContent = `${product.viewed??0} Viewed`
+                if(product.color){
+                    color.textContent = `Color : ${product.color[0].name??'default'}`
+                }
                 delivery.textContent = 'Delivery'
                 storePickupLabel.textContent = 'Store Pickup'
                 deliveryLabel.textContent = 'Delivery'
@@ -186,12 +198,7 @@
                     }
                     quantity.textContent = ++product.quantity
                 })
-                quantity.addEventListener('click', function () {
-                    quantity.style.color = 'grey'
-                    product.quantity = 0
-                    quantity.textContent = product.quantity
-                })
-                deliveryCharges.textContent = `Delivery : $${product.deliveryCharges} (2-3 business days, $${product.deliveryCharges} shipping)`
+                deliveryCharges.textContent = `Delivery : $${product.deliveryCharges??0} (2-3 business days, $${product.deliveryCharges??0} shipping)`
                 deliveryLocation.textContent = `to Newyork, NY`
 
                 deliveryDays.append(deliveryCharges, deliveryLocation)
@@ -311,7 +318,9 @@
                 imageDiv.classList.add('similar-image-div')
                 productDiv.classList.add('similar-product')
                 itemDiv.classList.add('similar-product-section')
-                image.src = `./images/${item.imageSrc.image1}`
+                if(item.imageSrc){
+                    image.src = `./images/${item.imageSrc.image1}`
+                }
                 productTitle.textContent = `${item.title}`
                 viewed.textContent = `${item.viewed} viewed`
                 prize.textContent = `$${item.prize}`
@@ -391,24 +400,6 @@
                 iconDiv.classList.add('logo-icon')
                 copyrightDiv.textContent = 'silos.com copyright 2021, All right reserved'
                 align.append(copyrightDiv, iconDiv)
-                main.append(align)
-                this.body.append(main)
-            },
-            profile: function () {
-                const [main, align] = this.getElement('section', 2)
-                const [profileDiv, saleDiv, contactDiv, linkDiv, profileSection] = this.getElement('div', 5)
-                const [aboutProduct, sellerDetails] = this.getElement('h3', 2)
-                linkDiv.classList.add('profile-flexbox')
-                const [img] = this.getElement('img')
-                align.classList.add('profile-align')
-                main.classList.add('align')
-                profileSection.classList.add('profile-section')
-                aboutProduct.textContent = 'About the product'
-                sellerDetails.textContent = 'Seller details'
-                img.src = './images/rectangle.jpg'
-                profileSection.append(profileDiv, saleDiv, contactDiv)
-                linkDiv.append(aboutProduct, sellerDetails)
-                align.append(linkDiv, profileSection)
                 main.append(align)
                 this.body.append(main)
             },
